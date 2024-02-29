@@ -102,20 +102,6 @@ Em termos técnicos, quando você acessa "localhost" no seu navegador ou em algu
 
 **package.json:** Aqui temos as dependências e scripts
 
-#### O que é CRUD
-
-CRUD é um acrônimo que representa as quatro operações básicas em sistemas de gerenciamento de banco de dados ou em qualquer aplicação que envolva manipulação de dados. As operações são:
-
-* Create (Criar): Adicionar novos dados.
-
-* Read (Ler): Recuperar dados existentes.
-
-* Update (Atualizar): Modificar dados existentes.
-
-* Delete (Excluir): Remover dados existentes.
-
-Essas operações são fundamentais para a interação com bancos de dados e são amplamente utilizadas no desenvolvimento de software.
-
 #### O que são métodos HTTP?
 
 Os métodos HTTP (Hypertext Transfer Protocol) são verbos que indicam a ação a ser realizada em um recurso identificado. Alguns dos métodos HTTP comuns incluem:
@@ -147,6 +133,85 @@ app.get('/ola', function(request, response) {
 })
 
 ```
+#### O que é CRUD?
+
+CRUD é um acrônimo que representa as quatro operações básicas em sistemas de gerenciamento de banco de dados ou em qualquer aplicação que envolva manipulação de dados. As operações são:
+
+* Create (Criar): Adicionar novos dados.
+
+* Read (Ler): Recuperar dados existentes.
+
+* Update (Atualizar): Modificar dados existentes.
+
+* Delete (Excluir): Remover dados existentes.
+
+Essas operações são fundamentais para a interação com bancos de dados e são amplamente utilizadas no desenvolvimento de software.
+
+#### O que é banco de dados?
+
+Um banco de dados é um sistema organizado para coletar, armazenar e gerenciar dados de forma eficiente, permitindo o acesso e a manipulação desses dados de maneira rápida e segura.
+
+**Para entender melhor**
+
+Eu tô fazendo marmitinhas para a semana. Mas o que isso tem a ver com nosso conteúdo de hoje? Assim como uma rotina alimentar organizada facilita a vida diária, um banco de dados bem estruturado e gerenciado é fundamental para o desenvolvimento de aplicativos eficientes e confiáveis. Ele ajuda a garantir que as informações sejam armazenadas de maneira organizada, acessível e segura.
+
+#### Quais os tipos de banco de dados?
+
+Existem diferentes tipos de bancos de dados, sendo os bancos de dados relacionais os mais comuns. Nesses sistemas, os dados são organizados em tabelas, e as relações entre as tabelas são estabelecidas para garantir a integridade e a consistência dos dados.
+
+Além dos bancos de dados relacionais, existem outros tipos, como bancos de dados NoSQL, que são mais flexíveis e podem lidar com diferentes tipos de dados, e bancos de dados de grafos, projetados para armazenar e consultar dados relacionados a redes complexas de informações.
+
+
+#### Qual a diferença entre SQL e NoSQL?
+
+| Característica                  | Bancos de Dados NoSQL            | Bancos de Dados SQL             |
+|---------------------------------|----------------------------------|---------------------------------|
+| **Modelo de Dados**              | Não-relacional, variável         | Relacional, tabular             |
+| **Esquema**                      | Dinâmico, sem estrutura fixa     | Estático, com esquema definido  |
+| **Flexibilidade**                | Flexível quanto a esquema e tipos | Rigidez no esquema e tipos      |
+| **Escalabilidade**               | Escalabilidade horizontal        | Escalabilidade vertical         |
+| **Transações ACID**              | Nem sempre garante ACID          | Geralmente ACID                 |
+| **Consulta**                     | Pode exigir abordagens diferentes | SQL padrão para consultas       |
+| **Relacionamentos**              | Menos enfatizado, uso de referências | Relacionamentos são fundamentais |
+| **Desenvolvimento Ágil**         | Adequado para desenvolvimento ágil | Pode ser mais restritivo       |
+| **Uso Comum**                    | Big Data, aplicações ágeis, não estruturadas | Aplicações tradicionais, estruturadas |
+| **Exemplos**                     | MongoDB, CouchDB, Cassandra       | MySQL, PostgreSQL, Oracle      |
+
+#### O que é MongoDB?
+
+O MongoDB é um sistema de gerenciamento de banco de dados NoSQL (Not Only SQL), orientado a documentos e de código aberto. Ele difere dos bancos de dados relacionais tradicionais ao adotar uma abordagem de armazenamento de dados baseada em documentos no formato BSON (Binary JSON). O BSON é uma representação binária do JSON (JavaScript Object Notation), que é um formato de dados leve e legível por humanos.
+
+O MongoDB é amplamente utilizado em ambientes de desenvolvimento ágil e projetos que requerem escalabilidade e flexibilidade de esquema. Ele é popular para aplicações que manipulam grandes volumes de dados não estruturados ou semi-estruturados.
+
+#### O que é Mongoose?
+
+Mongoose é uma biblioteca Node.js que proporciona uma camada de modelagem de dados sobre o MongoDB, um banco de dados NoSQL orientado a documentos. Ele é usado para simplificar a interação com o MongoDB, fornecendo uma estrutura de modelagem de dados, validação de esquema, mapeamento objeto-documento (ODM) e outras funcionalidades úteis.
+
+#### Tutorial Mongo
+
+1_ Criar a organização
+
+2_ Criar projeto
+
+2_ Criar banco de dados
+
+3_ Incluir cluster e outras infos
+
+4_ Senha e Usuário
+
+5_ Autorizar IP
+
+5_ Pegar string de conexão (connect)
+
+#### O que é .env ?
+
+O termo "dotenv" (ou "DotEnv") refere-se a uma prática comum na programação de usar um arquivo chamado .env para armazenar variáveis de ambiente. Essas variáveis geralmente incluem configurações sensíveis, como chaves de API, senhas de banco de dados, e outras informações que não devem ser compartilhadas publicamente ou incluídas diretamente no código-fonte.
+
+A biblioteca dotenv é frequentemente usada em várias linguagens de programação para carregar essas variáveis de ambiente do arquivo .env durante a fase de inicialização do aplicativo. Dessa forma, as configurações sensíveis não estão expostas diretamente no código e podem ser facilmente gerenciadas em diferentes ambientes (desenvolvimento, teste, produção) sem a necessidade de alterar o código-fonte.
+
+Por exemplo, em Node.js, você pode usar a biblioteca dotenv para carregar as variáveis de ambiente do arquivo .env 
+
+
 
 -----
 _Vai ser incrível compartilhar essa jornada com você! Qualquer dúvida ou sugestão, chama no contatinho!_

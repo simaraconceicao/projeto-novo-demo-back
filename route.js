@@ -7,6 +7,8 @@ const router = express.Router()
 
 router.get('/cards', getAll)
 
+//vai permitir criar um novo flash card
+
 router.post('/cards', create)
 
 module.exports = router
